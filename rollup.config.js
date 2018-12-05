@@ -8,7 +8,7 @@ const config = [
     input: 'src/index.js',
     external: ['react'],
     output: {
-      file: 'dist/index.min.js',
+      file: 'dist/index.js',
       name: "index",
       format: 'umd',
       globals: {
@@ -27,7 +27,7 @@ const config = [
     input: 'src/countdown.js',
     external: ['react'],
     output: {
-      file: 'dist/countdown.min.js',
+      file: 'dist/countdown.js',
       name: "countdown",
       format: 'umd',
       globals: {
@@ -46,7 +46,26 @@ const config = [
     input: 'src/component2.js',
     external: ['react'],
     output: {
-      file: 'dist/component2.min.js',
+      file: 'dist/component2.js',
+      name: "component2",
+      format: 'umd',
+      globals: {
+        react: "React"
+      }
+    },
+    plugins: [
+      babel({
+        exclude: "node_modules/**"
+      }),
+      uglify(),
+      resolve(),
+    ]
+  },
+  {
+    input: 'src/component3.js',
+    external: ['react'],
+    output: {
+      file: 'dist/component3.js',
       name: "component2",
       format: 'umd',
       globals: {
