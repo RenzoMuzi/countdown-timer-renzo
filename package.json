@@ -4,7 +4,7 @@
   "description": "test for rollupjs",
   "main": "dist/index.min.js",
   "scripts": {
-    "build": "rollup -c -o dist/index.min.js",
+    "build": "./build.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
