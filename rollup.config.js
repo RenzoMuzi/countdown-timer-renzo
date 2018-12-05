@@ -3,22 +3,64 @@ import babel from 'rollup-plugin-babel'
 import resolve from 'rollup-plugin-node-resolve';
 
 
-const config = {
-  
-  external: ['react'],
-  output: {
-    format: 'umd',
-    name: 'countdown',
-    globals: {
-      react: "React"
-    }
+const config = [
+  {
+    input: 'src/index.js',
+    external: ['react'],
+    output: {
+      file: 'dist/index.min.js',
+      name: "index",
+      format: 'umd',
+      globals: {
+        react: "React"
+      }
+    },
+    plugins: [
+      babel({
+        exclude: "node_modules/**"
+      }),
+      uglify(),
+      resolve(),
+    ]
   },
-  plugins: [
-    babel({
-      exclude: "node_modules/**"
-    }),
-    uglify(),
-    resolve(),
-  ]
-}
+  {
+    input: 'src/countdown.js',
+    external: ['react'],
+    output: {
+      file: 'dist/countdown.min.js',
+      name: "countdown",
+      format: 'umd',
+      globals: {
+        react: "React"
+      }
+    },
+    plugins: [
+      babel({
+        exclude: "node_modules/**"
+      }),
+      uglify(),
+      resolve(),
+    ]
+  },
+  {
+    input: 'src/component2.js',
+    external: ['react'],
+    output: {
+      file: 'dist/component2.min.js',
+      name: "component2",
+      format: 'umd',
+      globals: {
+        react: "React"
+      }
+    },
+    plugins: [
+      babel({
+        exclude: "node_modules/**"
+      }),
+      uglify(),
+      resolve(),
+    ]
+  }
+];
+
 export default config

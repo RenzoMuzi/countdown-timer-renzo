@@ -1,10 +1,10 @@
 {
   "name": "countdow-timer-renzo",
-  "version": "1.2.0",
+  "version": "1.1.0",
   "description": "test for rollupjs",
   "main": "dist/index.min.js",
   "scripts": {
-    "build": "./build.sh",
+    "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
