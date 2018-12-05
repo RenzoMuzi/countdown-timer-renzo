@@ -1,0 +1,30 @@
+{
+  "name": "countdow-timer-renzo",
+  "version": "1.0.0",
+  "description": "test for rollupjs",
+  "main": "dist/countdown.min.js",
+  "scripts": {
+    "build": "rollup -c -o dist/countdown.min.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RenzoMuzi/countdown-timer-renzo.git"
+  },
+  "author": "Renzo Muzi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RenzoMuzi/countdown-timer-renzo/issues"
+  },
+  "homepage": "https://github.com/RenzoMuzi/countdown-timer-renzo#readme",
+  "devDependencies": {
+    "@babel/core": "^7.2.0",
+    "@babel/preset-env": "^7.2.0",
+    "@babel/preset-react": "^7.0.0",
+    "react": "^16.6.3",
+    "rollup": "^0.67.4",
+    "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-uglify": "^6.0.0"
+  }
+}
