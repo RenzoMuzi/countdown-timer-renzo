@@ -2,7 +2,7 @@ import { uglify } from 'rollup-plugin-uglify'
 import babel from 'rollup-plugin-babel'
 
 const config = {
-  input: 'src/countdown.js',
+  input: 'src/index.js',
   external: ['react'],
   output: {
     format: 'umd',
