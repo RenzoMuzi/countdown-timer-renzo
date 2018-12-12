@@ -2,6 +2,7 @@
   "name": "countdow-timer-renzo",
   "version": "1.4.0",
   "description": "test for rollupjs",
+  "sideEffects": false,
   "main": "dist",
   "scripts": {
     "build": "rollup -c",
@@ -19,12 +20,15 @@
   "homepage": "https://github.com/RenzoMuzi/countdown-timer-renzo#readme",
   "devDependencies": {
     "@babel/core": "^7.2.0",
+    "@babel/plugin-proposal-class-properties": "^7.2.1",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
     "react": "^16.6.3",
     "rollup": "^0.67.4",
     "rollup-plugin-babel": "^4.0.3",
+    "rollup-plugin-multi-entry": "^2.0.2",
     "rollup-plugin-node-resolve": "^3.4.0",
+    "rollup-plugin-postcss": "^1.6.3",
     "rollup-plugin-uglify": "^6.0.0"
   }
 }

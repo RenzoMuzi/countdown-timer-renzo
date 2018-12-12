@@ -8,7 +8,7 @@ const config = [
     input: 'src/index.js',
     external: ['react'],
     output: {
-      file: 'dist/index.js',
+      file: 'lib/index.js',
       name: "index",
       format: 'umd',
       globals: {
@@ -19,7 +19,6 @@ const config = [
       babel({
         exclude: "node_modules/**"
       }),
-      uglify(),
       resolve(),
     ]
   },
@@ -27,7 +26,7 @@ const config = [
     input: 'src/countdown.js',
     external: ['react'],
     output: {
-      file: 'dist/countdown.js',
+      file: 'lib/countdown.js',
       name: "countdown",
       format: 'umd',
       globals: {
@@ -38,7 +37,6 @@ const config = [
       babel({
         exclude: "node_modules/**"
       }),
-      uglify(),
       resolve(),
     ]
   },
@@ -46,7 +44,7 @@ const config = [
     input: 'src/component2.js',
     external: ['react'],
     output: {
-      file: 'dist/component2.js',
+      file: 'lib/component2.js',
       name: "component2",
       format: 'umd',
       globals: {
@@ -57,7 +55,6 @@ const config = [
       babel({
         exclude: "node_modules/**"
       }),
-      uglify(),
       resolve(),
     ]
   },
@@ -65,7 +62,7 @@ const config = [
     input: 'src/component3.js',
     external: ['react'],
     output: {
-      file: 'dist/component3.js',
+      file: 'lib/component3.js',
       name: "component2",
       format: 'umd',
       globals: {
@@ -76,10 +73,9 @@ const config = [
       babel({
         exclude: "node_modules/**"
       }),
-      uglify(),
       resolve(),
     ]
-  }
+  },
 ];
 
 export default config
