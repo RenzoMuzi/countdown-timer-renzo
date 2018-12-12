@@ -22,60 +22,60 @@ const config = [
       resolve(),
     ]
   },
-  {
-    input: 'src/countdown.js',
-    external: ['react'],
-    output: {
-      file: 'lib/countdown.js',
-      name: "countdown",
-      format: 'umd',
-      globals: {
-        react: "React"
-      }
-    },
-    plugins: [
-      babel({
-        exclude: "node_modules/**"
-      }),
-      resolve(),
-    ]
-  },
-  {
-    input: 'src/component2.js',
-    external: ['react'],
-    output: {
-      file: 'lib/component2.js',
-      name: "component2",
-      format: 'umd',
-      globals: {
-        react: "React"
-      }
-    },
-    plugins: [
-      babel({
-        exclude: "node_modules/**"
-      }),
-      resolve(),
-    ]
-  },
-  {
-    input: 'src/component3.js',
-    external: ['react'],
-    output: {
-      file: 'lib/component3.js',
-      name: "component2",
-      format: 'umd',
-      globals: {
-        react: "React"
-      }
-    },
-    plugins: [
-      babel({
-        exclude: "node_modules/**"
-      }),
-      resolve(),
-    ]
-  },
+  // {
+  //   input: 'src/countdown.js',
+  //   external: ['react'],
+  //   output: {
+  //     file: 'lib/countdown.js',
+  //     name: "countdown",
+  //     format: 'umd',
+  //     globals: {
+  //       react: "React"
+  //     }
+  //   },
+  //   plugins: [
+  //     babel({
+  //       exclude: "node_modules/**"
+  //     }),
+  //     resolve(),
+  //   ]
+  // },
+  // {
+  //   input: 'src/component2.js',
+  //   external: ['react'],
+  //   output: {
+  //     file: 'lib/component2.js',
+  //     name: "component2",
+  //     format: 'umd',
+  //     globals: {
+  //       react: "React"
+  //     }
+  //   },
+  //   plugins: [
+  //     babel({
+  //       exclude: "node_modules/**"
+  //     }),
+  //     resolve(),
+  //   ]
+  // },
+  // {
+  //   input: 'src/component3.js',
+  //   external: ['react'],
+  //   output: {
+  //     file: 'lib/component3.js',
+  //     name: "component2",
+  //     format: 'umd',
+  //     globals: {
+  //       react: "React"
+  //     }
+  //   },
+  //   plugins: [
+  //     babel({
+  //       exclude: "node_modules/**"
+  //     }),
+  //     resolve(),
+  //   ]
+  // },
 ];
 
 export default config
