@@ -11,6 +11,7 @@ const config = [
       file: 'lib/index.js',
       name: "index",
       format: 'umd',
+      exports: 'named',
       globals: {
         react: "React"
       }
