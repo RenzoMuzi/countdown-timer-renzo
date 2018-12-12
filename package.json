@@ -3,7 +3,7 @@
   "version": "1.7.0",
   "description": "test for rollupjs",
   "sideEffects": false,
-  "main": "dist",
+  "main": "lib",
   "scripts": {
     "build": "rollup -c",
     "test": "echo \"Error: no test specified\" && exit 1"
